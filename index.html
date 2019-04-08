@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="pictureSwiching" content="图片左右切换显示">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pictureSwiching</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- 225 152 -->
+
+    <div class="container">
+        <div class="slide-container" id='slide-container'
+            style="-webkit-transform:translate(-235px,0); transform: translate(-235px,0);">
+            <div class="slide-item">
+                <img src="./imgs/p1.png" alt="">
+            </div>
+            <div class="slide-item active">
+                <img src="./imgs/p2.png" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./imgs/p3.png" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./imgs/p4.png" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./imgs/p5.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./imgs/p6.jpg" alt="">
+            </div>
+        </div>
+        <!-- 左右箭头 -->
+        <div class="left-arrow" id="left-arrow">
+        </div>
+        <div class="right-arrow" id='right-arrow'>
+        </div>
+
+    </div>
+
+    <!-- 显示对应的大图 -->
+    <div class="big-pic" id="big-pic">
+        <img src="./imgs/p2.png" alt="">
+    </div>
+
+    <script src="./js/swichingPic.js"></script>
+    <script>
+        console.log(swichingPic);
+        
+       swichingPic();
+    </script>
+</body>
+
+</html>

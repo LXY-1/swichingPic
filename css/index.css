@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* /* 根据轮播一次性显示固定大小的4张图片计算容器的大小 */
+.container{
+    width: 950px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.big-pic{
+    width: 940px;
+    height: 608px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.big-pic img{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+}
+.slide-container{
+    width: 1410px;
+    height:152px;
+    transition: all 0.7s ease-out;
+}
+.slide-container .slide-item{
+    width: 225px;
+    height: 152px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity:0.5;
+    
+}
+.slide-container .active{
+     opacity:1;
+}
+.slide-container .slide-item img{
+    width: 100%;
+    height: 100%;
+}
+.left-arrow,.right-arrow{
+    position: absolute;
+    left:0px;
+    top: 52px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.left-arrow{
+    background: url(../imgs/left.png) no-repeat;
+    background-size: 100% 100%;
+}
+.right-arrow{
+    background: url(../imgs/right.png) no-repeat;
+    background-size: 100% 100%;
+}
+.right-arrow{
+    left:900px;
+}
+.left-arrow:hover{
+    background: url('../imgs/leftactive.png') no-repeat;
+    background-size: 100% 100%; 
+}
+.right-arrow:hover{
+    background: url('../imgs/rightactive.png') no-repeat;
+    background-size: 100% 100%;
+}
